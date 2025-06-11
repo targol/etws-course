@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Module 1: Introduction to ETWS</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Your custom CSS here -->
-  <script src="scripts.js" defer></script> <!-- JS for interactivity -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -17,51 +16,42 @@
       </ul>
     </nav>
   </header>
-  
+
   <main>
     <section>
       <h2>What is ETWS?</h2>
-      <p>The Earthquake and Tsunami Warning System (ETWS) is part of the 3GPP's Public Warning System (PWS). It is designed to deliver timely emergency alerts, such as warnings about earthquakes or tsunamis, directly to mobile users in an affected area.</p>
-      
+      <p>The Earthquake and Tsunami Warning System (ETWS) is designed to deliver timely alerts for imminent natural disasters, such as earthquakes and tsunamis, to mobile users in affected areas.</p>
+
       <h3>Why is ETWS Important?</h3>
-      <p>ETWS provides early warnings to mobile subscribers about natural disasters, reducing the impact of earthquakes and tsunamis on life and property. It's a crucial system for ensuring the safety of citizens in vulnerable regions.</p>
+      <p>ETWS provides critical warnings to mitigate the impact of disasters on human life. It enables governments to send out emergency alerts via mobile networks, helping to save lives and prevent injuries.</p>
       
-      <div class="interactive-diagram">
-        <h4>ETWS Message Flow</h4>
-        <p>Click on the components below to learn more about each part of the ETWS message flow:</p>
-        <ul>
-          <li><a href="javascript:void(0);" onclick="showComponentInfo('cbc')">Cell Broadcast Center (CBC)</a></li>
-          <li><a href="javascript:void(0);" onclick="showComponentInfo('mme')">Mobile Management Entity (MME)</a></li>
-          <li><a href="javascript:void(0);" onclick="showComponentInfo('enodeb')">eNodeB / gNodeB</a></li>
-          <li><a href="javascript:void(0);" onclick="showComponentInfo('ue')">User Equipment (UE)</a></li>
-        </ul>
-        
-        <!-- This div will show information when the user clicks on a component -->
-        <div id="component-info" class="component-info"></div>
-
-        <!-- Placeholder diagram image (replace with actual diagram) -->
-        <img src="etws-message-flow.png" alt="ETWS Message Flow Diagram" class="diagram">
-      </div>
-
-      <h3>ETWS Message Structure</h3>
-      <p>ETWS messages are broadcast to all users in the affected area. A message typically includes:</p>
-      <ul>
-        <li><strong>Warning Type:</strong> Identifies the type of emergency (e.g., earthquake, tsunami).</li>
-        <li><strong>Message ID:</strong> A unique identifier for the message.</li>
-        <li><strong>Repetition Period:</strong> How often the message is repeated.</li>
-        <li><strong>Emergency User Alert:</strong> Indicates whether the alert should be presented to the user with an audible sound or vibration.</li>
-      </ul>
-
-      <h4>Example ETWS Message</h4>
+      <h4>Example Message</h4>
       <pre>
-        Message ID: 4352
-        Serial Number: 0001
+        Message ID: 1234
         Warning Type: Earthquake
-        Repetition Period: 1s
-        User Alert: ON
+        Alert Level: High
+        Repetition Period: 5s
       </pre>
 
-      <p>Above is an example of a primary ETWS message that could be sent out during an earthquake alert. The repetition period of 1 second ensures that users receive timely warnings in the event of a disaster.</p>
+      <p>The example above shows a basic structure of an ETWS message.</p>
+
+      <h3>Interactive Diagram</h3>
+      <img src="etws-message-flow.png" alt="ETWS Message Flow Diagram" class="diagram">
+
+      <h3>Module 1 Quiz</h3>
+      <form action="quiz1.html">
+        <label for="q1">1. What is ETWS?</label><br>
+        <input type="radio" name="q1" value="a"> A system to send alerts to mobile users in affected areas<br>
+        <input type="radio" name="q1" value="b"> A system for weather forecasting<br>
+        <input type="radio" name="q1" value="c"> A system for movie streaming<br><br>
+
+        <label for="q2">2. What does ETWS warn users about?</label><br>
+        <input type="radio" name="q2" value="a"> Earthquakes and Tsunamis<br>
+        <input type="radio" name="q2" value="b"> Floods<br>
+        <input type="radio" name="q2" value="c"> Traffic accidents<br><br>
+
+        <input type="submit" value="Submit Quiz">
+      </form>
     </section>
   </main>
 
