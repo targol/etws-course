@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 2: ETWS Architecture</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Module 2: ETWS Architecture</h1>
+    <nav>
+      <ul>
+        <li><a href="module1.html">Previous: Introduction to ETWS</a></li>
+        <li><a href="module3.html">Next: ETWS Message Format</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>ETWS Architecture Overview</h2>
+      <p>The ETWS architecture consists of multiple components that work together to ensure messages reach mobile users quickly and efficiently.</p>
+
+      <h3>Components</h3>
+      <ul>
+        <li><strong>Cell Broadcast Center (CBC)</strong> - Generates the alert message.</li>
+        <li><strong>Mobile Management Entity (MME)</strong> - Handles communication with the eNodeBs.</li>
+        <li><strong>eNodeB</strong> - Base stations that broadcast the alert to users in the affected area.</li>
+        <li><strong>User Equipment (UE)</strong> - Mobile devices that receive the alert.</li>
+      </ul>
+
+      <h3>Architecture Diagram</h3>
+      <img src="etws-architecture.png" alt="ETWS Architecture Diagram" class="diagram">
+
+      <h3>Module 2 Quiz</h3>
+      <form action="quiz2.html">
+        <label for="q1">1. What is the role of the CBC in the ETWS architecture?</label><br>
+        <input type="radio" name="q1" value="a"> Generate the alert message<br>
+        <input type="radio" name="q1" value="b"> Broadcast the alert to users<br>
+        <input type="radio" name="q1" value="c"> Handle communication with mobile devices<br><br>
+
+        <label for="q2">2. Which component receives the ETWS alert?</label><br>
+        <input type="radio" name="q2" value="a"> eNodeB<br>
+        <input type="radio" name="q2" value="b"> Mobile Management Entity (MME)<br>
+        <input type="radio" name="q2" value="c"> User Equipment (UE)<br><br>
+
+        <input type="submit" value="Submit Quiz">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ETWS Course</p>
+  </footer>
+</body>
+</html>
