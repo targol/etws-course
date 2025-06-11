@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Module 1: Introduction to ETWS</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Your custom CSS here -->
+  <script src="scripts.js" defer></script> <!-- JS for interactivity -->
 </head>
 <body>
   <header>
@@ -12,7 +13,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="module2.html">Next: Architecture</a></li>
+        <li><a href="module2.html">Next: ETWS Architecture</a></li>
       </ul>
     </nav>
   </header>
@@ -20,11 +21,50 @@
   <main>
     <section>
       <h2>What is ETWS?</h2>
-      <p>ETWS (Earthquake and Tsunami Warning System) is designed to deliver emergency alerts to mobile devices in the event of natural disasters.</p>
-      <img src="etws-diagram.png" alt="ETWS Architecture Diagram">
+      <p>The Earthquake and Tsunami Warning System (ETWS) is part of the 3GPP's Public Warning System (PWS). It is designed to deliver timely emergency alerts, such as warnings about earthquakes or tsunamis, directly to mobile users in an affected area.</p>
+      
+      <h3>Why is ETWS Important?</h3>
+      <p>ETWS provides early warnings to mobile subscribers about natural disasters, reducing the impact of earthquakes and tsunamis on life and property. It's a crucial system for ensuring the safety of citizens in vulnerable regions.</p>
+      
+      <div class="interactive-diagram">
+        <h4>ETWS Message Flow</h4>
+        <p>Click on the components below to learn more about each part of the ETWS message flow:</p>
+        <ul>
+          <li><a href="javascript:void(0);" onclick="showComponentInfo('cbc')">Cell Broadcast Center (CBC)</a></li>
+          <li><a href="javascript:void(0);" onclick="showComponentInfo('mme')">Mobile Management Entity (MME)</a></li>
+          <li><a href="javascript:void(0);" onclick="showComponentInfo('enodeb')">eNodeB / gNodeB</a></li>
+          <li><a href="javascript:void(0);" onclick="showComponentInfo('ue')">User Equipment (UE)</a></li>
+        </ul>
+        
+        <!-- This div will show information when the user clicks on a component -->
+        <div id="component-info" class="component-info"></div>
+
+        <!-- Placeholder diagram image (replace with actual diagram) -->
+        <img src="etws-message-flow.png" alt="ETWS Message Flow Diagram" class="diagram">
+      </div>
+
+      <h3>ETWS Message Structure</h3>
+      <p>ETWS messages are broadcast to all users in the affected area. A message typically includes:</p>
+      <ul>
+        <li><strong>Warning Type:</strong> Identifies the type of emergency (e.g., earthquake, tsunami).</li>
+        <li><strong>Message ID:</strong> A unique identifier for the message.</li>
+        <li><strong>Repetition Period:</strong> How often the message is repeated.</li>
+        <li><strong>Emergency User Alert:</strong> Indicates whether the alert should be presented to the user with an audible sound or vibration.</li>
+      </ul>
+
+      <h4>Example ETWS Message</h4>
+      <pre>
+        Message ID: 4352
+        Serial Number: 0001
+        Warning Type: Earthquake
+        Repetition Period: 1s
+        User Alert: ON
+      </pre>
+
+      <p>Above is an example of a primary ETWS message that could be sent out during an earthquake alert. The repetition period of 1 second ensures that users receive timely warnings in the event of a disaster.</p>
     </section>
   </main>
-  
+
   <footer>
     <p>&copy; 2025 ETWS Course</p>
   </footer>
