@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 3: ETWS Message Format</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Module 3: ETWS Message Format</h1>
+    <nav>
+      <ul>
+        <li><a href="module2.html">Previous: ETWS Architecture</a></li>
+        <li><a href="module4.html">Next: ETWS Testing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>ETWS Message Structure</h2>
+      <p>ETWS messages are structured in a way that they can be broadcast to mobile devices in an affected area. They include essential details like the warning type, message ID, and repetition period.</p>
+
+      <h3>Example Message Structure</h3>
+      <pre>
+        Message ID: 1234
+        Warning Type: Earthquake
+        Repetition Period: 5s
+        Alert Level: High
+      </pre>
+
+      <h3>Module 
